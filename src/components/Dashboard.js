@@ -1,9 +1,10 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const Dashboard = () => (
-	<div>
+	<Container>
 		Dashboard page content.
-	</div>
+	</Container>
 );
 
 export default Dashboard;

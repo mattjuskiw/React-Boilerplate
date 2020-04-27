@@ -1,15 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Button, Container, Jumbotron } from 'react-bootstrap';
 import { startLogin } from '../actions/auth';
 
 export const Login = ({ startLogin }) => (
 	<div className="box-layout">
-		<div className="box-layout__box">
-			<h1>Boilerplate</h1>
-			<p>Tag line for app.</p>
-			
-			<button className="button" onClick={startLogin}>Login with Google</button>
-		</div>
+		<Jumbotron className="text-center">
+			<Container>
+				<h1>Boilerplate</h1>
+				<p className="lead text-muted">Tag line for app.</p>
+				<hr className="my-4" />
+				
+				<Button variant="primary" size="lg" onClick={startLogin}>Login with Google</Button>
+			</Container>
+		</Jumbotron>
 	</div>
 );
 
